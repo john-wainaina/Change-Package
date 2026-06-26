@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEST360 Change Package Navigator</title>
+<style>
+:root{
+  /* Navy = NEST360's own confirmed brand colour (#094267), found embedded in
+     the theme_color parameter of their site's donate-button links, reused
+     identically across every page on nest360.org. Shades below are derived
+     from that exact value. */
+  --navy:#094267;--navy-deep:#062c46;--navy-mid:#5f849c;
+  --teal:#0f8b8d;--teal-deep:#0a6668;--teal-tint:#e7f5f4;
+  --gold:#c99a3c;--gold-deep:#a87d28;--gold-tint:#fdf4e3;
+  --bg:#f2f4f6;--panel:#fff;--text:#1d2a32;--muted:#5f7280;
+  --border:#dde3e8;--sh:0 2px 10px rgba(9,66,103,.08);--r:10px;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;word-wrap:break-word;overflow-wrap:break-word;}
+
+/* ── HEADER ──
+   White background matches nest360.org's own top navigation bar, so the
+   real full-colour logo displays legibly (it's designed for light backgrounds). */
+header.topbar{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50;box-shadow:0 1px 8px rgba(9,66,103,.06);}
+.topbar-inner{display:flex;align-items:center;gap:14px;padding:11px 20px;max-width:1440px;margin:0 auto;}
+.hamburger{display:none;background:transparent;border:1px solid var(--border);color:var(--navy);border-radius:6px;width:34px;height:34px;font-size:17px;cursor:pointer;flex-shrink:0;}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0;cursor:pointer;}
+.brand-logo{height:36px;width:auto;display:block;}
+.brand-logo-fallback{display:none;width:38px;height:38px;border-radius:9px;background:var(--navy);align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;border:2px solid var(--gold);letter-spacing:-.5px;}
+.brand-text h1{font-size:14.5px;margin:0;font-weight:700;color:var(--navy);}
+.brand-text span{display:block;font-size:11px;color:var(--muted);}
+.search-wrap{flex:1;position:relative;max-width:480px;margin-left:auto;}
+.search-wrap input{width:100%;padding:9px 14px 9px 36px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;outline:none;transition:border-color .15s,background .15s;}
+.search-wrap input::placeholder{color:#94a3ad;}
+.search-wrap input:focus{background:#fff;border-color:var(--teal);}
+.search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#94a3ad;font-size:13px;pointer-events:none;}
+.search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;color:var(--text);border-radius:var(--r);box-shadow:0 8px 30px rgba(9,66,103,.18);max-height:400px;overflow-y:auto;z-index:60;display:none;border:1px solid var(--border);}
+.search-results.show{display:block;}
+.search-result-item{padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;}
+.search-result-item:last-child{border-bottom:none;}
+.search-result-item:hover{background:var(--teal-tint);}
+.sr-path{font-size:11px;color:var(--teal-deep);font-weight:700;text-transform:uppercase;letter-spacing:.3px;}
+.sr-title{font-size:13.5px;font-weight:600;margin:2px 0;color:var(--navy);}
+.sr-snippet{font-size:12px;color:var(--muted);}
+.sr-empty{padding:16px;color:var(--muted);font-size:13px;text-align:center;}
+.accent-bar{height:2px;background:var(--teal);}
+
+/* ── LAYOUT ── */
+.layout{display:flex;max-width:1440px;margin:0 auto;min-height:calc(100vh - 60px);}
+
+/* ── SIDEBAR ── */
+.sidebar{width:272px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--border);padding:16px 0 50px;position:sticky;top:58px;align-self:flex-start;height:calc(100vh - 58px);overflow-y:auto;scroll-behavior:smooth;}
+.sidebar-home,.sidebar-resources{display:flex;align-items:center;gap:8px;padding:9px 16px;margin:2px 8px;border-radius:8px;font-weight:700;font-size:13px;color:var(--navy);cursor:pointer;}
+.sidebar-home:hover,.sidebar-resources:hover{background:var(--teal-tint);}
+.sidebar-resources.active{background:var(--gold-tint);color:var(--gold-deep);}
+.sidebar-divider{height:1px;background:var(--border);margin:10px 16px;}
+.module-toggle{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 16px;margin:1px 8px;border-radius:8px;cursor:pointer;font-weight:700;font-size:13px;color:var(--navy);border-left:3px solid transparent;}
+.mt-label{display:flex;align-items:center;gap:9px;color:inherit;}
+.mt-icon{display:flex;flex-shrink:0;opacity:.85;color:inherit;}
+.module-toggle:hover{background:var(--teal-tint);}
+.module-toggle.active{background:var(--teal-tint);border-left:3px solid var(--teal);color:var(--teal-deep);}
+.module-toggle .chev{font-size:10px;color:var(--muted);transition:transform .14s;flex-shrink:0;}
+.module-toggle.open .chev{transform:rotate(90deg);}
+.gap-list{display:none;padding:2px 8px 6px;}
+.gap-list.open{display:block;}
+.gap-item{display:block;padding:6px 12px 6px 24px;margin:1px 0;border-radius:7px;font-size:12.5px;color:var(--muted);cursor:pointer;border-left:3px solid transparent;line-height:1.35;}
+.gap-item:hover{background:var(--bg);color:var(--text);}
+.gap-item.active{background:var(--gold-tint);color:var(--gold-deep);font-weight:700;border-left:3px solid var(--gold);}
+.sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:44;}
+
+/* ── MAIN ── */
+main.content{flex:1;min-width:0;padding:26px 30px 70px;}
+.breadcrumb{font-size:12.5px;color:var(--muted);margin-bottom:16px;}
+.breadcrumb a{color:var(--teal-deep);font-weight:600;}
+.breadcrumb .sep{margin:0 6px;font-size:10px;color:#b2bfc8;}
+
+/* ── HOME ── */
+.hero{background:linear-gradient(130deg,var(--navy-deep) 0%,var(--navy) 55%,#14598a 100%);color:#fff;border-radius:var(--r);padding:30px 32px 28px;margin-bottom:28px;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(201,154,60,.3),transparent 70%);pointer-events:none;}
+.hero-eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--gold);margin-bottom:10px;}
+.hero h2{margin:0 0 10px;font-size:24px;font-weight:700;line-height:1.25;letter-spacing:-0.01em;}
+.hero p{margin:0 0 16px;color:#c8dce2;font-size:14.5px;max-width:600px;line-height:1.6;}
+.hero-meta{display:flex;align-items:center;gap:10px;font-size:12px;color:#8bb5c4;}
+.hero-meta-sep{opacity:.5;}
+.version-tag{background:rgba(201,154,60,.2);color:var(--gold);border:1px solid rgba(201,154,60,.4);border-radius:20px;padding:2px 10px;font-size:11.5px;font-weight:700;}
+.section-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--navy);margin:0 0 14px;padding-top:2px;}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:30px;}
+.step-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);padding:14px 15px;box-shadow:var(--sh);}
+.step-num{display:inline-block;background:var(--teal);color:#fff;font-size:10.5px;font-weight:700;padding:2px 9px;border-radius:20px;margin-bottom:7px;}
+.step-card p{margin:0;font-size:12.5px;color:var(--text);}
+.module-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;}
+.module-card{background:var(--panel);border:1px solid var(--border);border-top:4px solid;border-radius:var(--r);padding:18px;cursor:pointer;box-shadow:var(--sh);transition:transform .1s,box-shadow .1s;}
+.module-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(10,37,64,.13);}
+.mc-icon{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;margin-bottom:10px;}
+.module-card h3{margin:0 0 6px;font-size:15px;color:var(--navy);}
+.mc-stats{font-size:12px;color:var(--muted);display:flex;gap:6px;align-items:center;}
+.dot{color:var(--border);}
+
+/* ── MODULE OVERVIEW ── */
+.mod-header{display:flex;align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:16px;}
+.mod-header h2{margin:0;font-size:22px;font-weight:700;letter-spacing:-0.01em;color:var(--navy);flex:1;}
+.mod-stats{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.stat-pill{background:var(--teal-tint);color:var(--teal-deep);border:1px solid var(--teal);border-radius:20px;padding:3px 12px;font-size:12px;font-weight:700;}
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
+.filter-chip{border:1px solid var(--border);background:var(--panel);color:var(--muted);border-radius:20px;padding:5px 14px;font-size:12.5px;cursor:pointer;font-weight:600;}
+.filter-chip:hover{border-color:var(--teal);color:var(--teal-deep);}
+.filter-chip.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+.gap-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:30px;}
+.gap-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);padding:15px 16px;cursor:pointer;box-shadow:var(--sh);transition:border-color .12s,box-shadow .12s;}
+.gap-card:hover{border-color:var(--teal);box-shadow:0 4px 14px rgba(15,139,141,.12);}
+.gc-label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--teal-deep);background:var(--teal-tint);display:inline-block;padding:2px 8px;border-radius:20px;margin-bottom:8px;}
+.gap-card h4{margin:0 0 6px;font-size:13.5px;color:var(--navy);line-height:1.35;}
+.gc-count{font-size:12px;color:var(--muted);}
+
+/* ── GAP DETAIL ── */
+.gap-detail-header{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px;}
+.gdh-left{flex:1;}
+.gd-type-badge{display:inline-block;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--teal-deep);background:var(--teal-tint);padding:2px 10px;border-radius:20px;margin-bottom:8px;}
+.gap-detail-header h2{margin:0 0 4px;font-size:21px;font-weight:700;letter-spacing:-0.01em;color:var(--navy);}
+.gd-ideacount{font-size:13px;color:var(--muted);}
+.copy-link-btn{background:var(--navy);color:#fff;border:none;border-radius:7px;padding:8px 14px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;flex-shrink:0;}
+.copy-link-btn:hover{background:var(--navy-mid);}
+.copy-link-btn.copied{background:var(--teal-deep);}
+.gap-resources-box{background:var(--gold-tint);border:1px solid #e5c47a;border-radius:var(--r);padding:12px 16px;margin-bottom:20px;}
+.grb-label{font-size:12px;font-weight:700;color:var(--gold-deep);margin-bottom:8px;}
+.resource-tag{display:inline-block;background:rgba(201,154,60,.12);color:var(--gold-deep);border:1px solid #e5c47a;border-radius:20px;padding:2px 10px;font-size:11.5px;font-weight:600;margin:2px 4px 2px 0;}
+a.resource-tag{text-decoration:none;cursor:pointer;transition:background .12s,border-color .12s;}
+a.resource-tag-link:hover{background:rgba(201,154,60,.24);border-color:var(--gold-deep);}
+a.resource-tag-internal{background:var(--teal-tint);color:var(--teal-deep);border-color:var(--teal);}
+a.resource-tag-internal:hover{background:rgba(15,139,141,.18);}
+.rt-icon{font-size:9px;opacity:.75;margin-left:1px;}
+
+/* ── ACCORDION ── */
+.idea-accordion{display:flex;flex-direction:column;gap:8px;margin-bottom:28px;}
+.idea-item{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);}
+.idea-item.open{border-color:var(--teal);}
+.idea-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;cursor:pointer;user-select:none;}
+.idea-header:hover{background:#f8fafc;}
+.idea-header-left{display:flex;align-items:center;gap:10px;flex:1;min-width:0;}
+.idea-num{font-size:10.5px;font-weight:700;color:#fff;background:var(--teal);border-radius:20px;padding:2px 9px;white-space:nowrap;flex-shrink:0;}
+.idea-title-preview{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.idea-expand-btn{flex-shrink:0;background:var(--teal);color:#fff;border:none;border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:5px;line-height:1;}
+.idea-expand-btn .btn-chev{font-size:11px;transition:transform .14s;display:inline-block;}
+.idea-item.open .idea-expand-btn .btn-chev{transform:rotate(90deg);}
+.idea-item.open .idea-expand-btn{background:var(--teal-deep);}
+.idea-header:hover .idea-expand-btn{background:var(--teal-deep);}
+.idea-body{display:none;padding:0 18px 18px;border-top:1px solid var(--border);}
+.idea-item.open .idea-body{display:block;}
+.ib-field{margin-top:14px;}
+.ib-fl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--navy);display:block;margin-bottom:4px;}
+.ib-fv{margin:0;font-size:13.5px;color:var(--text);line-height:1.55;}
+.idea-main-text{color:var(--navy);font-weight:600;}
+
+/* ── RESOURCES PAGE ── */
+.res-title{font-size:22px;font-weight:700;letter-spacing:-0.01em;color:var(--navy);margin:0 0 8px;}
+.res-intro{font-size:14px;color:var(--muted);margin-bottom:24px;}
+.res-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);padding:22px 24px;margin-bottom:16px;box-shadow:var(--sh);}
+.res-card h3{margin:0 0 8px;font-size:17px;color:var(--navy);}
+.res-desc{font-size:13.5px;color:var(--text);margin:0 0 14px;line-height:1.55;}
+.res-sections-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--teal-deep);margin-bottom:8px;}
+.res-sections{margin:0;padding-left:18px;font-size:13px;color:var(--muted);line-height:1.7;}
+.res-note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:20px;}
+
+footer.app-footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40px;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:860px){
+  .hamburger{display:inline-block;}
+  .sidebar{position:fixed;left:-284px;top:0;height:100vh;z-index:45;width:272px;transition:left .2s ease;box-shadow:4px 0 20px rgba(0,0,0,.18);}
+  .sidebar.open{left:0;}
+  .sidebar-overlay.show{display:block;}
+  main.content{padding:18px 14px 50px;}
+  .topbar-inner{padding:10px 12px;}
+  .brand-text span{display:none;}
+  /* Bigger touch targets for nav and controls */
+  .gap-item{padding:10px 12px 10px 24px;font-size:13.5px;}
+  .module-toggle,.sidebar-home,.sidebar-resources{padding:11px 16px;}
+  .filter-chip{padding:8px 15px;font-size:13px;}
+  .idea-header{padding:15px 16px;}
+  .copy-link-btn{padding:10px 16px;font-size:13px;}
+  .module-card,.gap-card,.res-card{padding:16px;}
+}
+/* Two-row header on phones: search drops to its own full-width row */
+@media(max-width:600px){
+  .topbar-inner{flex-wrap:wrap;row-gap:10px;}
+  .search-wrap{flex-basis:100%;max-width:none;margin-left:0;order:3;}
+  /* Prevent iOS Safari auto-zoom on input focus (requires ≥16px font-size) */
+  .search-wrap input{font-size:16px;}
+  .module-grid,.gap-card-grid,.steps-grid{grid-template-columns:1fr;}
+}
+@media(max-width:480px){
+  .brand-text h1{font-size:13px;}
+  .hero{padding:22px 18px;}
+  .hero h2{font-size:19px;}
+}
+/* Very narrow phones: sidebar drawer scales to viewport instead of a fixed px width */
+@media(max-width:380px){
+  .sidebar{width:86vw;left:-90vw;}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+    <div class="brand" id="brandHome">
+      <!-- Inline SVG wordmark — no external request, works offline -->
+      <svg class="brand-logo" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NEST360">
+        <!-- Circular motif -->
+        <circle cx="20" cy="20" r="16" fill="none" stroke="#0F8B8D" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="10" fill="none" stroke="#094267" stroke-width="2"/>
+        <circle cx="20" cy="20" r="4.5" fill="#0F8B8D"/>
+        <!-- NEST wordmark -->
+        <text x="44" y="26" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif"
+              font-size="20" font-weight="700" fill="#094267" letter-spacing="-0.3">NEST</text>
+        <!-- 360 in teal -->
+        <text x="104" y="26" font-family="-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif"
+              font-size="20" font-weight="700" fill="#0F8B8D" letter-spacing="-0.3">360</text>
+      </svg>
+      <div class="brand-text">
+        <h1>Change Package Navigator</h1>
+        <span>NEST360 Quality Improvement Resource</span>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="searchInput" placeholder="Search change ideas, gaps, resources..." autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>
+<div class="accent-bar"></div>
+
+<!-- Shown ONLY when JavaScript is disabled / blocked (e.g. iOS QuickLook).
+     JS hides this immediately on load. -->
+<noscript>
+<div style="background:#094267;color:#fff;padding:20px 24px;font-family:-apple-system,sans-serif;font-size:15px;line-height:1.6;text-align:center;">
+  <strong>This tool requires JavaScript.</strong><br>
+  On iPhone: tap the <strong>&#x22EE;</strong> or Share button, then choose <strong>Open in Safari</strong>.<br>
+  Or visit the tool online — contact your NEST360 team for the URL.
+</div>
+</noscript>
+
+<!-- Shown by JS only when running as a local file on iOS Safari -->
+<div id="iosBanner" style="display:none;background:#094267;color:#fff;padding:14px 18px 14px 20px;font-family:-apple-system,sans-serif;font-size:14px;line-height:1.5;position:relative;">
+  <strong style="color:#C99A3C;">&#128241; Tip for testing on iPhone:</strong>
+  You are viewing this as a local file. Everything works — but for the best experience share the URL once it is deployed online.
+  <button onclick="document.getElementById('iosBanner').style.display='none'" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.15);border:none;color:#fff;border-radius:6px;padding:4px 10px;font-size:13px;cursor:pointer;">&#10005;</button>
+</div>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="layout">
+  <nav class="sidebar" id="sidebar"><div id="moduleNav"></div></nav>
+  <main class="content" id="content"></main>
+</div>
+<footer class="app-footer">
+  NEST360 Change Package Navigator &mdash; built from the NEST360 Change Package (August 2025) &middot; 5 modules &middot; 60 coverage gaps &middot; 255 change ideas
+</footer>
+<script id="appData" type="application/json">__DATA_JSON__</script>
+<script>__APP_JS__</script>
+</body>
+</html>

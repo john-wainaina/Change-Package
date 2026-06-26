@@ -1,0 +1,341 @@
+id: hypothermia
+name: Hypothermia
+short: Hypothermia
+gaps:
+- id: delivery-room
+  title: Delivery room is not warm
+  gap_type: Care quality
+  ideas:
+  - idea: 'Utilize a non-electric infant warmer that supports KMC (example: Warmilu)'
+    rationale: Ensures stability, supports KMC, and is cost-effective.
+    measure: Number of non-electric infant warmers available on the ward; number of newborns who used
+      them
+  - idea: Use a servo-heater and cardboard infant chamber
+    rationale: Provides a controlled environment to mimic an incubator and provide insulation.
+    measure: Number of servo-heaters/chambers available on the ward; number of newborns who used them
+  - idea: Use a conductive thermal mattress instead of swaddling with blankets and towels
+    rationale: Minimizes risk of uneven heat distribution and maintains optimal temperature.
+    measure: Number of newborns who used conductive thermal mattresses
+  - idea: Keep ward doors and windows closed
+    rationale: Ensures doors and windows remaining closed prevents the passive loss of heat from the unit.
+    measure: Nursery door closed (Yes/No); nursery windows closed (Yes/No)
+  - idea: Provide training on implementation of the warmer
+    rationale: Allows staff to more effectively utilize warmers.
+    measure: Number of warmer trainings
+  - idea: Measure room temperature four times per day (morning, mid-day, night, midnight) and manage accordingly
+    rationale: Frequent monitoring ensures timely identification of temperature deviations, allowing corrective
+      action (adjusting heating, closing windows, additional warming devices) to maintain ≥25°C.
+    measure: Percentage of scheduled temperature checks completed per day in the NBU and delivery ward
+  - idea: Prepare and use a checklist for delivery room preparation (close open windows/doors, turn on
+      radiant warmer and room warmer before delivery)
+    rationale: A structured checklist standardizes best practice for thermal protection immediately after
+      birth, reducing variability.
+    measure: Percentage of deliveries conducted in a room where all checklist items for thermal protection
+      were completed before birth
+- id: not-dried
+  title: Babies are not being dried immediately
+  gap_type: Care quality
+  ideas:
+  - idea: Put a Helping Babies Breathe (HBB) poster on the delivery ward wall
+    rationale: Serves as a visual reminder to follow essential steps in newborn resuscitation and hypothermia
+      prevention, including immediate drying and skin-to-skin contact.
+    measure: HBB poster posted on the wall of the delivery ward (Yes/No)
+    resources:
+    - Helping Babies Breathe poster
+    - OSCE template
+  - idea: Include two towels in the delivery set pack for immediate drying
+    rationale: Babies are wet and lose heat rapidly through evaporation at birth; one towel dries, the
+      second wraps and warms, minimizing heat loss cost-effectively.
+    measure: Percentage of deliveries conducted using two towels for immediate drying
+  - idea: Provide clinical mentorship using OSCE (Objective Structured Clinical Examination)
+    rationale: A structured, hands-on assessment ensures providers can correctly perform immediate drying,
+      skin-to-skin care, proper wrapping, and temperature monitoring.
+    measure: Number of staff who received clinical mentorship and skill evaluation using OSCE
+- id: skin-to-skin
+  title: Skin-to-skin contact is not occurring routinely
+  gap_type: Care quality
+  ideas:
+  - idea: Encourage skin-to-skin contact immediately (within 30 minutes ideally, or 24 hours) after delivery
+      between the naked neonate and mother's chest, continuing for 2 hours
+    rationale: Very early KMC has been shown to decrease hypothermia, improve breastfeeding, and decrease
+      sepsis and morbidity.
+    measure: Percentage of eligible neonates who received KMC within 24 hours (or within 30 minutes)
+    resources:
+    - KMC clinical guidelines
+  - idea: Coach mothers on KMC for 1-hour stretches on day one, increasing by 1 hour each following day
+      until the mother is comfortable on her own
+    rationale: Allows the mother to gradually become more confident with longer durations of KMC.
+    measure: Modified procedures of education sessions (Yes/No)
+  - idea: Incorporate KMC training, including early initiation of breastfeeding, into education about
+      danger signs to ensure timely intervention
+    rationale: Empowers mothers to recognize critical issues such as apnea, cyanosis, and decreased activity.
+    measure: Modified procedures of education sessions (Yes/No)
+- id: breastfeeding
+  title: Breastfeeding is not initiated early
+  gap_type: Care quality
+  ideas:
+  - idea: Demonstrate appropriate breastfeeding positioning and attachment using a mannequin
+    rationale: Helps providers and mothers learn correct technique in a controlled environment before
+      practicing on a real baby.
+    measure: Number of mothers trained on breastfeeding positioning and attachment using a mannequin
+    resources:
+    - Videos on appropriate breastfeeding positioning
+  - idea: Develop and use a counseling checklist covering breastfeeding good practices and importance
+    rationale: Helps providers deliver consistent, evidence-based information on technique, positioning,
+      and attachment, promoting optimal infant nutrition.
+    measure: Breastfeeding counseling checklist developed and used (Yes/No); percentage of mothers with
+      a documented breastfeeding counseling checklist completed
+  - idea: Monitor feeding amount and frequency alongside vital signs
+    rationale: Adequate nutrition supports thermoregulation; tracking vital signs alongside feeding helps
+      detect early signs of cold stress.
+    measure: Percentage of newborn feeding amount and frequency monitored/documented
+- id: weighing-bathing
+  title: Newborn weighing scale is not warm, and bathing is not delayed
+  gap_type: Care quality
+  ideas:
+  - idea: Delay weighing the baby until one hour of life, unless immediate action is necessary
+    rationale: Reduces unnecessary exposure to cold environments, aligning with golden-hour principles.
+    measure: Percentage of newborns weighed after one hour of birth unless medically indicated for earlier
+      weighing
+  - idea: Prewarm clothing before weighing
+    rationale: The newborn won't become cold during the time they're weighed.
+    measure: Percentage of times clothing was prewarmed prior to weighing
+  - idea: Put the weighing scale near the radiant warmer
+    rationale: Reduces unnecessary movement and exposure to cold air and surfaces during weighing.
+    measure: Percentage of newborns weighed in close proximity to a functioning radiant warmer
+  - idea: Cover the weighing scale with a pre-warmed towel before weighing the baby
+    rationale: A pre-warmed towel acts as a protective barrier, reducing temperature drop from contact
+      with a cold scale.
+    measure: Percentage of newborns weighed on a scale covered with a pre-warmed towel
+  - idea: Delay bathing at least 24 hours after birth
+    rationale: Delaying bathing decreases the rapid heat loss newborns can experience.
+    measure: Percentage of newborn baths occurring at least 24 hours after birth
+  - idea: Use sponging with tepid water to bathe newborns
+    rationale: Tepid water and sponges prevent the rapid heat loss that occurs when bathing in cool water.
+    measure: Percentage of baths using sponges and tepid water
+- id: clothing
+  title: Newborns are not dressed in appropriate clothing
+  gap_type: Care quality
+  ideas:
+  - idea: Provide a heat-resistant polyethylene plastic bag and plastic hat (rather than a cotton hat)
+    rationale: Demonstrated to be more effective than cotton at preventing hypothermia, with reduced risk
+      of hyperthermia.
+    measure: Post-delivery procedures modified to include polyethylene covers (Yes/No); number of newborns
+      wrapped in polyethylene bag and hat
+    resources:
+    - Warm chain poster
+    - Quality of care tool
+  - idea: Use a chitenje as a wrap alternative for newborns
+    rationale: Using commonly available fabrics decreases financial burden and shows mothers how to continue
+      wrapping newborns after discharge.
+    measure: Number of times a chitenje was used as a newborn wrap
+  - idea: Provide training to newborn staff on the proper method for wrapping newborns in blankets
+    rationale: Training on proper wrapping technique increases staff knowledge and confidence.
+    measure: Number of staff who received the wrapping training
+  - idea: Pre-warm newborn clothes including socks, hat, and drying towels before the delivery using a
+      radiant warmer, and use them to cover the newborn
+    rationale: Immediate use of warm clothing maintains body temperature and reduces cold stress risk.
+    measure: Percentage of newborns covered with pre-warmed clothes immediately after birth
+  - idea: Provide counseling for pregnant women during ANC on birth preparedness, including preparing
+      appropriate clothes (cotton clothes, hat, socks, flannel)
+    rationale: Educating mothers ensures they are well-prepared to maintain their newborn's body temperature,
+      integrating awareness early.
+    measure: Percentage of pregnant women counseled during ANC on appropriate newborn clothing and thermal
+      care
+  - idea: Demonstrate appropriate newborn wrapping using a mannequin for mothers
+    rationale: Hands-on demonstration increases mothers' confidence and ensures consistent application
+      at home and in hospital, especially for preterm/low-birth-weight infants.
+    measure: Percentage of mothers who correctly demonstrate newborn wrapping after training
+- id: transport
+  title: Warm transport is not maintained
+  gap_type: Care quality
+  ideas:
+  - idea: Utilize a portable infant warmer for transportation
+    rationale: Ensures the neonate remains warm during transport.
+    measure: Number of times a portable infant warmer was used post-delivery
+  - idea: Assign an individual to ensure incubator batteries are charged and the incubator is turned on
+      thirty minutes before delivery
+    rationale: Ensures a portable infant warmer is available for use at the time of need.
+    measure: Percentage of shifts where a staff member was designated to ensure the incubator was charged
+      and ready for use
+  - idea: Wrap all newborns and place a hat on them before transfer to another unit
+    rationale: Prevents a decrease in temperature even if the transport route is colder than the units.
+    measure: Percentage of newborns wrapped and wearing a hat before transport
+  - idea: Use a plastic bag during transportation per national guidelines or another standard
+    rationale: An effective, evidence-based intervention for preterm and low-birth-weight infants, reducing
+      evaporative and convective heat loss.
+    measure: Percentage of newborns transported using a plastic bag to prevent heat loss
+  - idea: Take the newborn's temperature prior to transfer to another unit
+    rationale: Ensures the baby is ready to be moved and provides a baseline for comparison after arrival.
+    measure: Percentage of newborns with temperature taken before transport
+  - idea: Transport the newborn with the mother in a KMC position, with an accompanying healthcare provider
+    rationale: A proven method to prevent hypothermia via continuous skin-to-skin contact, particularly
+      valuable where external warming devices aren't always available.
+    measure: Percentage of newborns transported within the facility using the KMC position
+  - idea: Have a healthcare provider carry the newborn (wrapped appropriately) close to their chest if
+      a mother or surrogate is unavailable
+    rationale: Shares body warmth and allows faster, more familiar transport than an unfamiliar family
+      member could provide.
+    measure: Percentage of newborns transported in the arms of a healthcare provider, appropriately wrapped
+  - idea: Practice zero separation between mother and newborn
+    rationale: Continuous skin-to-skin contact helps regulate the newborn's temperature.
+    measure: Percentage of mothers and newborns who practiced zero separation
+  - idea: Reward staff who maintain the warm chain
+    rationale: Reinforces positive behaviors, motivates continued adherence, and encourages other staff
+      to prioritize the warm chain.
+    measure: Number of staff rewarded/acknowledged for maintaining the warm chain
+  - idea: Stabilize the baby in the labor ward prior to transferring to the newborn unit
+    rationale: Reduces the risk of heat loss during transfer.
+    measure: Percentage of newborns stabilized in the labor ward prior to transfer
+- id: assessment-space
+  title: Physical assessment and/or resuscitation space is not warm
+  gap_type: Care quality
+  ideas:
+  - idea: Proactively warm the environment where physical examination will be conducted
+    rationale: Minimizes heat loss during undressing and examination, reducing risk of cold stress, hypoglycemia,
+      and respiratory distress.
+    measure: Percentage of physical examinations conducted in a room with ambient temperature ≥25°C
+  - idea: Consistently warm physician/health professionals' hands before examination
+    rationale: Cold hands cause heat loss through conduction; warmed hands create a more thermally stable
+      environment for the baby.
+    measure: Percentage of healthcare providers who warm their hands before newborn examinations
+  - idea: Proactively warm physical examination assessment tools (stethoscope, thermometer, etc.)
+    rationale: Contact with cold tools can trigger vasoconstriction; warming tools first ensures a gentle,
+      safe exam.
+    measure: Percentage of newborn assessments conducted using pre-warmed examination tools
+  - idea: Delay unwrapping the newborn during admission to the newborn unit
+    rationale: Prevents heat loss by keeping the baby warm until the physical space is warmed or a radiant
+      warmer is set up.
+    measure: Percentage of admissions that received delayed unwrapping
+- id: caregiver-knowledge
+  title: Caregivers lack knowledge and comfort with maintaining the warm chain
+  gap_type: Care quality
+  ideas:
+  - idea: Provide health education during antenatal visits on ways to be prepared for facility delivery
+    rationale: Increases the likelihood mothers bring appropriate clothing and increases their knowledge
+      of activities like KMC.
+    measure: Number of health education sessions targeting ANC mothers
+    resources:
+    - Parental counseling resources
+  - idea: Provide education sessions on the importance of changing wet clothes after feeding and frequently
+      changing diapers
+    rationale: Increases parental knowledge and the likelihood they will perform these activities.
+    measure: Number of sessions provided to parents on hypothermia prevention
+  - idea: Use a demonstration kit during antenatal clinic education sessions containing appropriate and
+      inappropriate delivery clothing, so mothers can feel the difference
+    rationale: Physically feeling the difference enhances understanding and encourages selection of clothing
+      that decreases hypothermia risk.
+    measure: Delivery kit with appropriate clothing available for ANC education sessions (Yes/No)
+  - idea: Inform guardians to place extra nappies at the baby's bedside
+    rationale: Keeps nappies nearby so parents can change the newborn in a timely manner, keeping the
+      baby dry and warm.
+    measure: Percentage of newborn beds with extra nappies located next to them
+- id: staff-knowledge
+  title: Staff lack knowledge and comfort with maintaining the warm chain
+  gap_type: Care quality
+  ideas:
+  - idea: Provide routine education for clinicians on the dangers of hypothermia, consistent warm linen
+      supply, thermometers in the labor room, radiant warmers in theater, transport incubators, and keeping
+      incubator batteries charged
+    rationale: Allows staff to more effectively prevent hypothermia and emphasizes the importance of treatment.
+    measure: Training includes greater focus on SOPs for hypothermia (Yes/No); number of clinicians trained
+    resources:
+    - Checklists for hypothermia care
+    - Quality of care tool
+    - Helping Babies Breathe
+    - Essential Care for Every Baby
+    - Warm chain poster
+  - idea: Educate students on the dangers of hypothermia, ways to maintain the warm chain, and the importance
+      of documentation
+    rationale: Ensures students have the same knowledge as staff and perform the same level of care during
+      their rotations.
+    measure: Percentage of students who received this education
+  - idea: Implement a checklist for hypothermia care, including setting ambient temperature, quickly drying
+      the infant, applying a pre-warmed hat, weighing after placing in a blanket, using pre-heated mattresses,
+      and planning training and assessments on temperature measurement
+    rationale: Standardizes hypothermia care to ensure all measures are taken.
+    measure: Standardized checklist for staff developed (Yes/No)
+  - idea: Post standard operating procedures (SOPs) throughout the newborn ward
+    rationale: Makes SOPs readily available so staff can track their own care quality and answer questions
+      about hypothermia prevention.
+    measure: SOPs visible in the ward (Yes/No)
+  - idea: Implement training courses from Helping Babies Breathe and Essential Care for Every Baby
+    rationale: Ensures staff have standardized, high-quality information on hypothermia care.
+    measure: Number of HBB/ECEB sessions that occurred
+  - idea: 'Perform spot checks/audit clinician procedures (example: completely drying and covering the
+      baby)'
+    rationale: Auditing clinician care ensures staff perform needed tasks and identifies areas for continuing
+      education.
+    measure: Number of clinical audits occurring
+  - idea: Use warm chain champions
+    rationale: Champions act as early adopters and motivators, encouraging staff to adopt hypothermia
+      prevention techniques and offering implementation guidance.
+    measure: Number of champions identified and trained
+- id: temp-monitoring
+  title: Newborn temperature is not routinely monitored
+  gap_type: Care quality
+  ideas:
+  - idea: Monitor temperature using a device such as a bracelet to ensure thermoregulation
+    rationale: Ensures optimal temperature ranges are achieved.
+    measure: Percentage of newborns with a temperature monitoring device
+- id: infrastructure-risk
+  title: Infrastructural features increase hypothermia risk
+  gap_type: Care quality
+  ideas:
+  - idea: Create a mother-newborn care unit with space and equipment to keep mothers present while their
+      newborn is cared for
+    rationale: Facilitates KMC by providing a designated area and greater parental involvement in care.
+    measure: Restructured mother-newborn unit (Yes/No)
+  - idea: Procure additional thermometers for the newborn wards
+    rationale: Allows staff to frequently check room and newborn temperatures.
+    measure: Number of thermometers ordered
+  - idea: Procure additional heaters for the labor ward
+    rationale: Helps staff maintain a warm temperature in the ward.
+    measure: Number of heaters purchased
+  - idea: Procure additional radiant warmers
+    rationale: Allows staff to keep more newborns in warmers.
+    measure: Number of radiant warmers purchased
+  - idea: Centralize the air conditioning (AC) and heating system at the facility
+    rationale: Allows the facility to regulate temperature in the labor and newborn wards centrally.
+    measure: AC and heating system centralized (Yes/No)
+  - idea: Include clothes/wraps in delivery packs
+    rationale: Ensures dry wraps are available for the newborn.
+    measure: Delivery kits include dry clothes/wraps (Yes/No)
+  - idea: Monitor the use of radiant warmers
+    rationale: Helps staff determine whether they are taking advantage of the resources available to them.
+    measure: Percentage of available radiant warmers in use
+  - idea: Perform planned preventative maintenance (PPM) and refurbishment of warming devices (radiant
+      warmers, heaters, etc.)
+    rationale: Ensures devices remain functional and available when needed.
+    measure: Number of times PPM occurred
+  - idea: Repair broken doors in theater and labor ward
+    rationale: Broken doors and windows let cool air into the labor ward, decreasing the newborn's temperature.
+    measure: Broken door(s) fixed (Yes/No)
+- id: documentation
+  title: Documentation gaps
+  gap_type: Data quality
+  ideas:
+  - idea: Develop a room temperature monitoring chart and assign someone to monitor it
+    rationale: Lets staff monitor temperature trends and ensure an adequate temperature is maintained.
+    measure: Chart developed (Yes/No)
+    resources:
+    - QI Meeting Minutes Template
+  - idea: Audit documentation (room temperature and newborn vitals)
+    rationale: Monitoring documentation quality ensures individuals are following the change ideas and
+      improving their reporting.
+    measure: Number of documentation audits
+  - idea: Perform monthly data audits during ward improvement meetings and develop action plans
+    rationale: Allows facilities to monitor progress and track changes in hypothermia prevention.
+    measure: Number of data audits that occurred
+  - idea: Analyze causes of failure of QI projects
+    rationale: Evaluating the success of change ideas helps facilities identify which to continue and
+      which to stop.
+    measure: QI project audit occurred (Yes/No)
+- id: additional
+  title: Additional interventions to prevent hypothermia
+  gap_type: Care quality
+  ideas:
+  - idea: Massage neonates three times a day for 15 minutes on the face and scalp after proper hand-washing
+    rationale: Demonstrated by several studies to reduce hypothermia; can be facilitated by virgin coconut
+      oil, which may be culturally aligned.
+    measure: Percentage of newborns who received a massage

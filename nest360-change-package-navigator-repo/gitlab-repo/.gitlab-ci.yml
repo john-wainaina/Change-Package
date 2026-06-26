@@ -1,0 +1,62 @@
+# NEST360 Change Package Navigator — GitLab CI/CD Pipeline
+#
+# What this does automatically when you commit a change:
+#   1. Validates all YAML data files for syntax and required fields
+#   2. Builds the HTML tool
+#   3. Deploys it to GitLab Pages (publicly accessible URL)
+#
+# You do not need to run anything locally. Just edit, commit, and it deploys.
+
+image: python:3.11-slim
+
+stages:
+  - validate
+  - build
+  - deploy
+
+# Install dependencies (PyYAML only)
+.setup: &setup
+  before_script:
+    - pip install pyyaml --quiet
+
+# ── Stage 1: Validate YAML ──────────────────────────────────────────────────
+validate:
+  stage: validate
+  <<: *setup
+  script:
+    - echo "Validating YAML data files..."
+    - python3 build/build.py --validate-only
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH'
+
+# ── Stage 2: Build HTML ──────────────────────────────────────────────────────
+build:
+  stage: build
+  <<: *setup
+  script:
+    - echo "Building HTML navigator..."
+    - python3 build/build.py
+    - echo "Build complete."
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 30 days
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+
+# ── Stage 3: Deploy to GitLab Pages ─────────────────────────────────────────
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp dist/nest360-change-package-navigator.html public/index.html
+    - echo "Deployed to GitLab Pages."
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  needs:
+    - job: build
+      artifacts: true

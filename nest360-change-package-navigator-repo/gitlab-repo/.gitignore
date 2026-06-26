@@ -1,0 +1,16 @@
+# Auto-generated output — built by CI/CD pipeline, not committed
+dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+*.swp

@@ -1,0 +1,238 @@
+id: cpap
+name: CPAP
+short: CPAP
+gaps:
+- id: equipment
+  title: Not enough working equipment
+  gap_type: Care quality
+  ideas:
+  - idea: Track the occurrence of CPAP planned preventative maintenance (PPM)
+    rationale: Routine PPM prevents breakdowns, ensuring devices are available when needed for newborns.
+    measure: Number of times PPM occurs
+    resources:
+    - BMET Technical Job Aids
+  - idea: Distribute additional CPAP machines while not compromising CPAP monitoring
+    rationale: Increasing the number of CPAPs allows a facility to treat more newborns.
+    measure: Number of additional CPAPs distributed
+- id: power
+  title: Not enough power
+  gap_type: Care quality
+  ideas:
+  - idea: 'Identify and implement back-up power (example: solar, generator)'
+    rationale: Adding a secondary power source ensures CPAP devices work during power outages.
+    measure: Backup power source identified (Yes/No)
+  - idea: Have additional power ports installed
+    rationale: Additional power ports enable staff to use more CPAP devices.
+    measure: Additional power ports installed (Yes/No)
+  - idea: Create space in the admission room and newborn unit (NBU) to store and keep CPAP devices
+    rationale: Designating a storage location for CPAP devices ensures they can be used without the need
+      to frequently move/transport them.
+    measure: Space created (Yes/No)
+- id: supplies
+  title: CPAP supplies not readily available
+  gap_type: Care quality
+  ideas:
+  - idea: Prepare and maintain a CPAP box with all the tools required to adhere to the CPAP checklist
+    rationale: Providing all the tools and supplies necessary to place a newborn on CPAP in one box ensures
+      staff have everything they need and increases the feasibility of following the CPAP checklist.
+    measure: Complete CPAP box is available on the ward (Yes/No)
+    resources:
+    - List of supplies needed for CPAP box
+- id: delayed-initiation
+  title: CPAP initiation is delayed
+  gap_type: Care quality
+  ideas:
+  - idea: In cases where the labor ward anticipates a preterm delivery, have them call the newborn unit
+      to inform staff about the incoming admission and to set up the CPAP machine
+    rationale: Timely communication and preparation between the labor and newborn units allows staff time
+      to set up the CPAP machine in advance, increasing the feasibility of initiating treatment soon after
+      birth.
+    measure: Percentage of times the labor ward called the newborn ward to inform them of an incoming
+      preterm admission
+  - idea: Initiate CPAP in the labor ward with portable devices, with labor ward staff
+    rationale: Allows for immediate respiratory support at the point of birth using portable devices that
+      can then be transferred to the newborn unit, reducing delays from birth to CPAP initiation.
+    measure: Percentage of eligible newborns initiated on CPAP in the labor ward
+  - idea: Initiate CPAP at admission for eligible newborns
+    rationale: Initiating CPAP at the time of admission reduces delay by ensuring eligible newborns receive
+      respiratory support as soon as possible, without waiting for later assessment or rounds.
+    measure: Percentage of eligible admissions initiated on CPAP
+- id: staffing
+  title: Not enough staff
+  gap_type: Care quality
+  ideas:
+  - idea: Allocate a minimum of 2 staff nurses per duty shift
+    rationale: More nursing staff allows closer CPAP monitoring for newborns, enabling early intervention
+      and better outcomes.
+    measure: 2 nurses per duty shift (Yes/No)
+  - idea: Advocate with leadership to add an additional nurse to the night shift
+    rationale: More nursing staff allows closer CPAP monitoring for newborns, enabling early intervention
+      and better outcomes.
+    measure: Additional nurse on night shift (Yes/No)
+- id: knowledge
+  title: Staff lack knowledge and comfort with using CPAP
+  gap_type: Care quality
+  resources:
+  - Quality of care tool
+  - Clinical job aids
+  - Training videos
+  - Clinical Modules
+  - Clinical Scenarios
+  - NEST-IT dashboard
+  - OSCE template
+  - Nasal injury grading score sheet
+  ideas:
+  - idea: Conduct routine mentorship on CPAP use
+    rationale: Performing routine mentorship ensures all staff are aware of current care guidelines and
+      practice the same level of care.
+    measure: Number of new clinicians who received mentorship; number of mentorship sessions
+  - idea: Conduct mentorship for new clinicians on CPAP usage
+    rationale: Mentoring new staff increases their capacity and ensures they have the training necessary
+      to provide care.
+    measure: Number of new clinicians who received mentorship; number of mentorship sessions
+  - idea: Conduct CPAP drills, possibly as part of continuous professional development (CPDs)
+    rationale: Drills help staff practice skills and build confidence in their care abilities.
+    measure: Number of drills that occurred
+  - idea: Peer-to-peer education
+    rationale: Peer education and support foster a positive environment, boosting individuals' confidence
+      with using CPAP.
+    measure: Number of peer education occurrences
+  - idea: Perform CPAP demonstration
+    rationale: Performing skills demonstrations allows staff to see how a skill should occur and provides
+      a knowledge refresher.
+    measure: Number of staff / total staff that received the demonstration
+  - idea: Set clinical care targets for clinicians
+    rationale: Clinical care targets help staff routinely practice skills, maintaining confidence through
+      regular performance.
+    measure: Clinical care targets established (Yes/No); clinical care targets being monitored (Yes/No)
+  - idea: Develop a job training schedule and perform on-job orientation
+    rationale: A job training schedule ensures the individuals who need training receive it, and on-job
+      orientation ensures new staff have the skills to care for newborns on CPAP.
+    measure: Schedule developed (Yes/No); number of staff / total staff who have been trained
+  - idea: Post CPAP care algorithms
+    rationale: Posted algorithms enhance staff knowledge and provide guidance when needed.
+    measure: Algorithms available and/or posted in the unit (Yes/No)
+  - idea: Use CPAP patient handovers
+    rationale: CPAP-specific handovers are essential to maintaining safety, continuity, and quality of
+      care for newborns with respiratory needs.
+    measure: Number of CPAP patient handovers using the country's standard care form
+  - idea: Regularly assess clinicians and provide feedback on CPAP competency using a checklist (Objective
+      Structured Clinical Examination, OSCE)
+    rationale: Regularly assessing clinician competency ensures staff have the knowledge to provide high-quality
+      CPAP care and identifies areas where additional mentorship and training may be needed.
+    measure: Number of clinicians / total clinicians competent for, or assessed for, CPAP competency
+  - idea: Post a decision support algorithm/checklist for CPAP eligibility as a poster on the wall around
+      the admission area
+    rationale: Posted eligibility criteria are easy to locate, enhance staff knowledge, and provide guidance
+      when needed.
+    measure: Eligibility poster posted in the ward (Yes/No)
+  - idea: Develop a policy on prophylactic CPAP
+    rationale: A policy on prophylactic CPAP provides clear guidelines on when and how to initiate CPAP,
+      increasing staff confidence and standardizing clinical decision-making.
+    measure: Policy on prophylactic CPAP developed (Yes/No)
+  - idea: Use standardized decision support algorithms/checklists during admission to determine CPAP eligibility
+    rationale: A checklist/algorithm for determining CPAP eligibility is a simple knowledge aid that helps
+      determine which newborns would benefit from CPAP.
+    measure: Were the next 5 babies screened for CPAP eligibility with the algorithm (Yes/No); percentage
+      of newborns whose CPAP eligibility was determined using the decision algorithm
+  - idea: Task allocation (1 person assigned to handle all CPAP babies each day)
+    rationale: Assigning a CPAP-specific nurse lets that person focus solely on providing high-quality
+      CPAP care.
+    measure: Percentage of shifts with a CPAP-specific nurse identified
+  - idea: Focused training of all bedside nurses, in groups, emphasizing adherence to nasal CPAP fixation
+      guidelines
+    rationale: Monitoring nasal prong placement and preventing nasal injury is a crucial care step for
+      high-quality CPAP, and training increases staff knowledge and confidence.
+    measure: Percentage of staff who received the focused training on nasal CPAP fixation guidelines
+- id: motivation
+  title: Staff not motivated
+  gap_type: Care quality
+  ideas:
+  - idea: Best CPAP nurse award
+    rationale: Recognizing a best CPAP nurse boosts their confidence and motivation to continue high-quality
+      care, and may inspire other staff to improve their practice.
+    measure: Number of staff receiving the award
+  - idea: CPAP champions
+    rationale: Champions can serve as early adopters and motivators, encouraging staff to perform high-quality
+      CPAP.
+    measure: Champion identified and trained (Yes/No); champion has begun to mentor other staff (Yes/No)
+- id: no-monitoring
+  title: No routine monitoring of CPAP
+  gap_type: Care quality
+  ideas:
+  - idea: Increase the frequency of monitoring for newborns on CPAP
+    rationale: By increasing monitoring frequency, nursing staff can deliver proactive, high-quality care,
+      ensuring the safety and well-being of newborns on CPAP therapy.
+    measure: Percentage of babies on CPAP with documented monitoring (vital signs, skin and nasal care,
+      progress) per national guidelines or another standard
+    resources:
+    - Quality of care tool
+    - Nasal injury grading score sheet
+  - idea: Perform daily inspection, identification, and grading of nasal injuries for all newborns on
+      CPAP using the modified nasal injury score
+    rationale: Inspecting and grading nasal injuries daily lets staff determine if/when an injury occurs
+      and track its progress to ensure it doesn't worsen.
+    measure: Percentage of newborns who received daily inspection, identification, and grading of nasal
+      injuries while on CPAP
+  - idea: Perform spot checks on CPAP during handovers
+    rationale: Spot checks ensure nurses communicate essential information between shifts, maintaining
+      high-quality care.
+    measure: Percentage of CPAP handovers occurring
+- id: parents
+  title: Parents preventing CPAP from occurring
+  gap_type: Care quality
+  ideas:
+  - idea: Provide health education to parents and guardians of newborns on CPAP
+    rationale: Educating parents can increase their knowledge of CPAP usage and its importance, increasing
+      their understanding.
+    measure: Percentage of newborn documentation reporting that parents received education/counseling
+      about CPAP; number of education sessions; percentage of CPAP counseling/education sessions reported
+      through the Quality of Care Tool
+    resources:
+    - Parent's Orientation Video
+    - Quality of care tool
+- id: documentation
+  title: CPAP not documented
+  gap_type: Data quality
+  ideas:
+  - idea: Prepare an audit schedule for CPAP documentation, including documentation of CPAP eligibility
+      screening
+    rationale: Monitoring documentation quality ensures individuals are following the change ideas and
+      improving their reporting.
+    measure: Schedule developed (Yes/No); percentage of properly documented files
+  - idea: Use CPAP champions to audit documentation quality
+    rationale: Assigning one person to perform documentation audits ensures accountability for completing
+      the task.
+    measure: Number of documentation audits occurring
+  - idea: 'Ensure documentation includes a place to report CPAP information, including morbidity associated
+      with CPAP (example: pneumothoraxes)'
+    rationale: Including this information allows facilities to track the quality of CPAP care they provide.
+    measure: Documentation includes a place for morbidity (Yes/No); number of data audits
+- id: data-usage
+  title: Poor data usage
+  gap_type: Data quality
+  ideas:
+  - idea: Discuss NEST-IT data during morning discussions and/or QI meetings
+    rationale: Routinely evaluating data allows facilities to monitor care quality and direct resources
+      for improvement if needed.
+    measure: Frequency of data reviews
+    resources:
+    - QI Meeting Minutes Template
+  - idea: Send reminder messages to QI leads to review data
+    rationale: Reminders can be the nudge QI leads need to remember to review data and act promptly on
+      it.
+    measure: Data reminders sent to QI leads (Yes/No)
+  - idea: Prepare an audit schedule for QI documentation
+    rationale: Monitoring QI documentation ensures change ideas are being tracked and care progress is
+      monitored.
+    measure: Schedule developed (Yes/No); frequency of documentation reviews
+- id: data-quality
+  title: Poor data quality
+  gap_type: Data quality
+  ideas:
+  - idea: Include data completeness and timeliness in routine data reviews
+    rationale: Routinely evaluating data completeness and timeliness during data review meetings helps
+      facilities ensure their data is higher quality.
+    measure: Data completeness and timeliness included in data reviews (Yes/No); frequency of data reviews
+    resources:
+    - QI Meeting Minutes Template

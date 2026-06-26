@@ -1,0 +1,310 @@
+id: ipc
+name: Infection Prevention and Control (IPC)
+short: IPC
+gaps:
+- id: hand-hygiene
+  title: Poor hand hygiene practice by health care providers
+  category: Infection protection prevention
+  ideas:
+  - idea: Run a hand hygiene campaign
+    rationale: 'Promotes consistent hand washing with running water and antimicrobial soap at every sink
+      in the NBU, at all five moments: before/after patient contact, after contact with a source of microorganisms,
+      and after removing gloves.'
+    measure: Hand hygiene campaign conducted (Yes/No)
+    resources:
+    - 'WHO: considerations for investing in hand hygiene improvement in health care facilities'
+    - 'Guide to local production: WHO-recommended handrub formulations'
+    - 'WHO brief: hand hygiene for all initiative'
+  - idea: Improve use of hand rub
+    rationale: Making a 60% isopropyl alcohol handrub with 0.5% chlorhexidine gluconate available as a
+      waterless alternative supports hand hygiene at all key moments.
+    measure: Percentage of healthcare providers using hand rub
+  - idea: Conduct hand hygiene compliance observation
+    rationale: Weekly 1-hour observations during random shifts let nurses anonymously record hand hygiene
+      opportunities and compliance using a standard checklist, with errors discussed privately to maintain
+      confidentiality.
+    measure: Percentage of five-moments hand hygiene compliance by healthcare providers
+  - idea: Provide hand hygiene education
+    rationale: Structured sessions on proper technique and use of cleansing agents, incorporated into
+      resident orientation and new-staff onboarding, covering nurses, physicians, therapists, technicians,
+      and social workers.
+    measure: Percentage of healthcare providers trained on hand hygiene
+  - idea: Post hand hygiene cartoons/posters
+    rationale: Posting correct handwashing steps above each sink and the slogan "Clean Hands, Prevent
+      Infection" on carts, scales, and supply shelves keeps the message visible.
+    measure: Hand hygiene cartoons/poster posted (Yes/No)
+  - idea: Give public praise to HCWs who perform hand hygiene appropriately
+    rationale: Public recognition (e.g. a certificate at the monthly NBU staff meeting) reinforces the
+      desired behavior.
+    measure: Number of HCWs who received public praise for hand hygiene
+- id: iv-insertion
+  title: Poor IV insertion and care infection prevention practice
+  category: Infection protection prevention
+  ideas:
+  - idea: Introduce an IV-line insertion clinician asepsis bundle
+    rationale: A bundle with a checklist (2-minute procedural hand wash, sterile gloves and gown, hat
+      and mask) standardizes safe IV line insertion.
+    measure: Percentage of IV insertions conducted per protocol among those observed
+    resources:
+    - Guidelines for the prevention of intravascular catheter-related infections
+  - idea: Change IV lines every 5 days
+    rationale: Frequent replacement of IV lines is a crucial infection prevention strategy, minimizing
+      the risk of bacterial contamination and bloodstream infection in vulnerable newborns.
+    measure: Percentage of admitted neonates with an IV line changed at least every 5 days
+- id: adherence
+  title: Poor adherence to IPC protocol by health care workers
+  category: Infection protection prevention
+  ideas:
+  - idea: Reinforce IPC protocol as a group at every shift change handover
+    rationale: A brief (<5 minute) discussion of aseptic practices during the shift-change nursing huddle,
+      repeated for 3 days at every change, increases staff awareness.
+    measure: Number of group reinforcement sessions conducted during shift change
+    resources:
+    - 'Newborn guideline of care: Infection prevention & control'
+    - 'WHO brief: Nurses and midwives critical for infection prevention and control'
+  - idea: Adhere to a barrier nursing protocol
+    rationale: 'Developed by the infection control nurse: separate gowns, gloves, caps, masks, and regular
+      cleaning around any neonate suspected of or confirmed to have sepsis, with a bedside checklist of
+      activities and timings.'
+    measure: Percentage adherence to barrier nursing protocol
+  - idea: Provide supervision for HCWs on IPC
+    rationale: Weekly classes on infection control procedures conducted by the Nursing Supervisor and
+      the head of the Infection Control Committee, with special focus on specimen collection, aseptic
+      measures, and microbiology basics, reinforced through daily supervision.
+    measure: Percentage of IPC supervision conducted as per the plan
+  - idea: Run regular IPC training for newly posted residents and staff
+    rationale: A programme led by designated QI team members, with simple theoretical and practical classes
+      and before/after questionnaires, delivered within days of joining.
+    measure: Percentage of newly posted residents and staff trained on IPC
+  - idea: Change CPAP water daily using color-coded water bottles, discarding unused water and replacing
+      it with fresh, sterile water
+    rationale: Color-coded bottles make it easier for staff to remember to switch CPAP sterile water as
+      a simple, routine practice.
+    measure: Percentage of CPAP machines with the current colored water bottle during a unit audit
+  - idea: Implement the "Speak Up" protocol for IPC issues during neonatal unit rounds
+    rationale: A patient safety initiative encouraging healthcare providers to report observed breaches
+      in IPC protocol, including training on assertive communication, accessible reporting channels, leadership
+      modeling, and a feedback loop to ensure reports lead to action.
+    measure: Percentage of staff who received training or introduction to the "Speak Up" protocol
+  - idea: Implement a comprehensive NBU sepsis prevention bundle
+    rationale: Combines several critical interventions simultaneously, going beyond a single standard
+      protocol, to decrease the occurrence of infections.
+    measure: Percentage adherence to the comprehensive NBU sepsis bundle
+- id: mothers-family
+  title: Poor IPC practice by mothers and family
+  category: Infection protection prevention
+  ideas:
+  - idea: Improve hand hygiene for visitors
+    rationale: Restricting visitor numbers and requiring hand washing before going to a patient's bedside.
+    measure: Percentage of visitors who wash their hands before going to a patient's bedside
+    resources:
+    - Guideline for the prevention of mother-to-child transmission of communicable infections
+  - idea: Provide IPC training for mothers and other caregivers
+    rationale: Training a small group of 3-4 mothers/caregivers at a time on the ward reinforces health
+      and infection control messages, with a logbook of sessions and topics covered.
+    measure: Percentage of mothers and caregivers who received training on IPC
+  - idea: Inspect mothers' or caregivers' personal hygiene
+    rationale: Nurses inspect hygiene (including fingernails) daily, providing a clean gown for bedside
+      wear and a box for dirty items.
+    measure: Number of days mothers' and caregivers' hygiene was inspected
+  - idea: Provide health education to mothers of babies admitted to the NBU on hygiene, infection prevention,
+      nutrition, breastfeeding, feeding, hypothermia prevention, danger signs, and KMC
+    rationale: Comprehensive education equips mothers with essential knowledge and skills to care for
+      their newborns effectively.
+    measure: Percentage of mothers who received education on IPC
+- id: environmental-cleaning
+  title: Inappropriate/poor environmental and device cleaning practices by facility housekeepers
+  category: Infection protection prevention
+  ideas:
+  - idea: Train facility support staff (porters, housekeepers, supervisors) on environmental cleaning
+    rationale: Practical demonstrations on cleaning floors, surfaces, and walls equip staff with standardized
+      technique, proper use of cleaning agents, and infection prevention practice.
+    measure: Percentage of housekeeping staff trained on environmental cleaning
+    resources:
+    - Environmental cleaning and infection prevention and control in healthcare facilities in low- and
+      middle-income countries
+    - Best practices for environmental cleaning in healthcare facilities in resource-limited settings
+    - WHO decontamination and reprocessing of medical devices for healthcare facilities
+  - idea: Select and use detergents and disinfectants appropriately
+    rationale: The choice of cleaning agent must consider surface/material type, level of contamination,
+      and risk of pathogen transmission.
+    measure: Appropriate detergents and disinfectants selected and used (Yes/No)
+  - idea: Validate environmental cleaning
+    rationale: A checklist-based validation of terminal cleaning, focused on high-touch surfaces, identifies
+      gaps and enables targeted feedback to cleaning staff.
+    measure: Percentage of appropriately cleaned surfaces
+  - idea: Provide staff training and competency assessments on cleaning and decontamination
+    rationale: Regular training followed by periodic competency assessment ensures adherence to standardized
+      cleaning protocols.
+    measure: Percentage of staff trained on equipment cleaning/decontamination, and assessed for competency
+  - idea: Post visual aids for cleaning guidance
+    rationale: Laminated step-by-step decontamination guides near cleaning stations for commonly used
+      equipment.
+    measure: Visual aid on equipment cleaning/decontamination posted (Yes/No)
+  - idea: Introduce enhanced cleaning and decontamination monitoring and feedback systems
+    rationale: A checklist-based monitoring system where supervisors review cleaning practices and provide
+      real-time feedback.
+    measure: Percentage of appropriate equipment cleaning/decontamination conducted
+  - idea: Maintain incubator hygiene
+    rationale: A routine weekly schedule for disinfecting incubators (surfaces, equipment, and bedding),
+      with staff trained on proper disinfection technique.
+    measure: Incubator hygiene maintained as per protocol (Yes/No)
+- id: leadership
+  title: Gaps in leadership buy-in for IPC
+  category: Infection protection prevention
+  ideas:
+  - idea: Make PPE (shoes and gowns) available for infection prevention and control in the NBU
+    rationale: Regular inventory checks, replenishment, and training on correct use/disposal make PPE
+      more accessible, supporting more consistent adherence to IPC protocols.
+    measure: Adequate PPE material available (Yes/No)
+  - idea: Use colored buckets for waste disposal
+    rationale: Blue buckets for normal waste, red for potentially infectious or dangerous waste (syringes,
+      needles, broken tubes, etc.).
+    measure: Colored buckets for waste disposal available near the care delivery area (Yes/No)
+  - idea: Make minor structural renovations
+    rationale: Installing a hand-washing facility with a liquid soap dispenser and making minor repairs
+      improves infection control measures.
+    measure: Structural renovations completed (Yes/No)
+- id: proactive
+  title: Poor proactive infection prevention practices
+  category: Infection protection prevention
+  ideas:
+  - idea: Practice clean birth practices
+    rationale: Minimizes the introduction of pathogens during delivery, reducing infection risk for mothers
+      and newborns.
+    measure: Percentage of deliveries that follow clean birth practices
+  - idea: Practice umbilical cord care, including applying chlorhexidine ointment for all babies under
+      7 days old
+    rationale: Reduces bacterial colonization at the cord site and lowers the risk of neonatal sepsis.
+    measure: Percentage of babies who receive appropriate umbilical cord care
+- id: blood-cultures
+  title: Blood cultures not happening before antibiotic administration
+  category: Infection detection practices
+  ideas:
+  - idea: Provide education and skill enhancement for clinical service providers on early identification
+      and management of neonatal sepsis
+    rationale: A concise, SOP-based one-day training package for doctors, nurses, and paramedics, with
+      regular refresher training integrated into ward rounds or organized quarterly/six-monthly.
+    measure: Percentage of healthcare providers trained on neonatal sepsis
+    resources:
+    - 'NHS Saving Lives: taking blood cultures'
+    - 'Blood culture: a key investigation for diagnosis of bloodstream infections (booklet)'
+    - 'WHO guidelines on drawing blood: best practices in phlebotomy'
+  - idea: Provide orientation empowering healthcare providers to draw blood cultures before the first
+      antibiotic dose if the resident doctor is busy
+    rationale: Weekly orientation sessions for day/night shift residents and nurses, via presentation,
+      on the importance of drawing blood cultures before antibiotics.
+    measure: Percentage of healthcare providers who received orientation on blood culture practice
+  - idea: Use social media and posters as reminders to draw blood for culture before antibiotic
+    rationale: Regular WhatsApp reminders and motivational posters reinforce the importance of drawing
+      blood culture before antibiotic with aseptic technique.
+    measure: WhatsApp reminders sent to healthcare providers (Yes/No)
+  - idea: Ensure availability of blood culture bottles in the patient care area
+    rationale: Reaching agreement with the lab department to stock culture bottles at the labor ward and
+      NBU ensures samples can be collected immediately when needed, with bottles replaced by the lab every
+      fortnight.
+    measure: Percentage of blood culture bottles available in patient care area for babies with suspected
+      infection
+  - idea: Maintain enough blood collection bottles for culture in every shift
+    rationale: Handover of culture bottle stock between nursing shifts ensures no shift is caught without
+      bottles.
+    measure: Enough blood collection bottles for culture maintained in every shift (Yes/No)
+  - idea: Assign a responsible person to collect lab culture results on time
+    rationale: Designating someone to collect culture results ensures timely receipt because it becomes
+      a named responsibility, preventing delays due to competing care priorities.
+    measure: Percentage of shifts that had a lab-results person assigned
+- id: sepsis-id
+  title: Poor identification of suspected sepsis cases
+  category: Infection detection practices
+  ideas:
+  - idea: Use the Neonatal Healthcare-associated infection Prediction (NeoHoP) score to identify suspected
+      neonatal HAI
+    rationale: The NeoHoP score consists of five variables (capillary refill time >3 s, lethargy, abdominal
+      distension, presence of a central venous catheter currently or in the preceding 48 hours, and CRP
+      ≥10 mg/L). A score ≥2 is well positioned as a 'rule-in' test.
+    measure: Percentage of suspected neonatal HAI identified using the NeoHoP score
+  - idea: Implement triage, identification, and rapid admission for sick neonates
+    rationale: Sick neonates are prioritised in the emergency department followed by identification of
+      syndromic sepsis (hypothermia, hyperthermia, altered mental status, convulsion, respiratory distress,
+      umbilical infection, not feeding properly) and immediate admission for treatment.
+    measure: Percentage of sick newborns triaged early and admitted
+  - idea: Introduce syndromic sepsis checklists and patient record forms
+    rationale: A 'Syndromic Sepsis Fast Assessment Checklist' maintained for all children admitted with
+      syndromic sepsis, filled by the on-duty nurse, standardises identification and recording.
+    measure: Syndromic sepsis checklists and patient record forms introduced (Yes/No)
+- id: cross-contamination
+  title: Poor cross-contamination prevention
+  category: Infection detection practices
+  ideas:
+  - idea: Isolate septic cases and assign nursing staff who only manage sepsis cases
+    rationale: Isolating infected newborns and assigning a specific nurse minimises contact between infected
+      and non-infected babies, reducing the risk of spreading infection within the unit.
+    measure: Percentage of septic cases assigned a specific nurse
+- id: antibiotic-guidelines
+  title: Poor adherence to antibiotic administration guidelines
+  category: Infection care
+  resources:
+  - 'Newborn guideline of care: Antibiotics'
+  ideas:
+  - idea: Sensitise staff on administering the first dose of antibiotics within the golden hour
+    rationale: Ongoing education on the importance of timely administration — especially the first dose
+      within the golden hour — reduces mortality risk in neonatal sepsis.
+    measure: Percentage of eligible babies given first dose of antibiotics within the golden hour
+  - idea: Post flow charts to assist management of sepsis
+    rationale: A clinical algorithm flow chart prepared from the SOP and placed in prominent positions
+      in the NBU serves as a quick reference for clinicians, alongside visual reminders on IPC, hand washing,
+      and waste management.
+    measure: Sepsis management flow chart posted on the wall (Yes/No)
+  - idea: Administer parenteral broad-spectrum antibiotics as first-line treatment
+    rationale: After initial management, parenteral ampicillin (50 mg/kg, 8-hourly) and gentamicin combination
+      is the first-line antibiotic; ceftriaxone is second line. In confirmed sepsis, continue for 7–10
+      days. Task shifting allows on-duty nurses to initiate treatment with assent from on-call physician.
+    measure: Percentage of newborns with infection in whom broad-spectrum antibiotics were initiated
+  - idea: Establish a routine antibiotic time-out at 48 hours (no later than 72 hours) after negative
+      culture results
+    rationale: A structured review point to discontinue unnecessary antibiotics reduces antimicrobial
+      resistance risk and adverse effects in newborns with negative cultures.
+    measure: Percentage of antibiotics discontinued for newborns with negative culture result at 48 hours
+- id: followup
+  title: Gaps in follow-up of newborns with infections
+  category: Infection care
+  ideas:
+  - idea: Improve vital sign monitoring in the newborn unit
+    rationale: Standardising protocols, training staff, and maintaining equipment for accurate and consistent
+      monitoring of temperature, heart rate, respiratory rate, and oxygen saturation enables early detection
+      and timely intervention.
+    measure: Percentage of newborns with all vital signs recorded as per protocol
+- id: family-engagement
+  title: Gaps in maternal and family engagement
+  category: Infection care
+  resources:
+  - Danger signs in newborns
+  ideas:
+  - idea: Involve caregivers in care using a danger sign tracking sheet
+    rationale: A neonatal danger sign tracking sheet listing signs such as feeding issues, convulsions,
+      fast breathing, chest indrawing, abnormal temperatures, yellow soles, poor movement, and local infections
+      empowers caregivers to observe and report critical deterioration.
+    measure: Number of mothers/caregivers tracking danger signs using the sheet
+  - idea: Use an 'Expert Mom' role model to support other mothers on breastfeeding, KMC, and danger signs
+    rationale: An 'Expert Mom' — a mother who has successfully navigated breastfeeding, KMC, and recognising
+      danger signs — serves as a peer mentor, providing practical guidance and emotional support that
+      increases other mothers' confidence and competence.
+    measure: Number of mothers educated by the 'Expert Mom'
+  - idea: Task-shift feeding responsibilities to mothers after three days of NBU staff support
+    rationale: After three days of supervised training on feeding techniques, hunger cues, and the importance
+      of timely and adequate feeding, mothers take over feeding independently, fostering maternal confidence
+      and reducing nursing burden.
+    measure: Percentage of mothers for whom task shifting on newborn feeding was conducted
+- id: sepsis-audit
+  title: Clinical audit on sepsis not conducted
+  category: Infection care
+  ideas:
+  - idea: Conduct monthly clinical audits and provide feedback based on findings
+    rationale: Weekly or biweekly clinical audits using a checklist identify gaps in the identification
+      and management of sepsis; findings are shared as structured feedback with NBU staff.
+    measure: Percentage of clinical audits conducted as per plan
+  - idea: Hold multidisciplinary sepsis review huddles
+    rationale: Multidisciplinary review meetings bring together healthcare professionals to review recent
+      sepsis cases, discuss clinical data, treatment outcomes, and challenges, and identify improvements
+      in protocols, communication, and care.
+    measure: Percentage of multidisciplinary sepsis review huddles conducted as per plan

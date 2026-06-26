@@ -1,0 +1,420 @@
+id: kmc
+name: Kangaroo Mother Care (KMC)
+short: KMC
+gaps:
+- id: infrastructure
+  title: Infrastructure not compatible with KMC, or missing KMC resources
+  gap_type: Care quality
+  ideas:
+  - idea: If space is available, place beds next to the neonatal warmer/bed
+    rationale: Providing seating around the newborn's bed enhances parental comfort, encouraging more
+      frequent and longer KMC sessions.
+    measure: Number of additional beds/seats added to the unit
+    resources:
+    - KMC wrapping video
+  - idea: If funds and space are available, purchase reclining chairs and/or beds for the KMC and/or newborn
+      unit
+    rationale: Providing seating around the newborn's bed enhances parental comfort, encouraging more
+      frequent and longer KMC sessions.
+    measure: Number of additional beds/seats added to the unit
+  - idea: Utilize infrastructure funds to create cubicles in the KMC or newborn unit
+    rationale: Facilities can use available funds to renovate the unit, increasing privacy and creating
+      a more KMC-friendly space.
+    measure: Report of unit renovations/remodels
+  - idea: Place screens or curtains around/near the newborn's bed/warmer to provide privacy for the individual
+      practicing KMC
+    rationale: Providing seating and curtains around the newborn's bed increases privacy and comfort,
+      encouraging parents to practice KMC more frequently or for longer.
+    measure: Screens placed around the unit for privacy (Yes/No)
+  - idea: Facilities subsidize KMC wraps and gowns
+    rationale: Subsidizing KMC supplies makes them more affordable, encouraging mothers to provide KMC
+      with the necessary resources.
+    measure: Cost of KMC wraps/gowns after subsidizing
+  - idea: Demonstrate how to use kitenges as a KMC wrap
+    rationale: Using the mother's existing clothing, nurses can demonstrate how KMC can be practiced without
+      buying additional items.
+    measure: Number of times a nurse demonstrated using kitenges as wraps
+  - idea: Explore abandoned rooms to create space for family members to bathe and prepare food
+    rationale: Providing families with spaces for daily needs allows them to stay at the facility, ensuring
+      their availability for KMC.
+    measure: Is there a place for families to use the toilets / bathe / prepare and eat food (Yes/No)
+  - idea: Repurpose nearby non-functional material stores to create space for family members to bathe
+      and prepare food
+    rationale: Providing families with spaces for daily needs allows them to stay at the facility, ensuring
+      their availability for KMC.
+    measure: Is there a place for families to use the toilets / bathe / prepare and eat food (Yes/No)
+  - idea: Practice intermittent KMC
+    rationale: Practicing intermittent KMC allows more mothers to come into the unit to practice KMC with
+      their newborns, even if the room is too small for all mothers at once.
+    measure: Percentage of eligible newborns who received intermittent KMC
+  - idea: Ensure there is an available dining room for KMC mothers
+    rationale: Ensuring mothers can accomplish tasks of daily living (e.g., preparing and eating food)
+      makes it easier for them to remain on the unit and be available to provide KMC.
+    measure: Dining space for KMC mothers available (Yes/No)
+- id: leadership
+  title: Inadequate leadership support
+  gap_type: Care quality
+  ideas:
+  - idea: Educate leaders on the importance of KMC
+    rationale: Educating leadership on KMC's importance helps them prioritize it and can lead to increased
+      facility-level support.
+    measure: Number of education sessions with leadership
+  - idea: Incorporate KMC into management review metrics
+    rationale: Incorporating KMC data into management reviews helps leadership track coverage and fosters
+      buy-in by keeping them informed of goals and progress.
+    measure: KMC data present in management review metrics (Yes/No)
+- id: staffing
+  title: Not enough staff
+  gap_type: Care quality
+  ideas:
+  - idea: Monitor for staff turnover and retrain
+    rationale: Identifying the causes of high staff turnover is the first step in making changes to retain
+      staff.
+    measure: Root cause analysis exploring reasons for turnover
+  - idea: Reduce staff rotations when possible
+    rationale: Reducing staff rotations from neonatal and labor wards ensures trained staff are consistently
+      available.
+    measure: Updated guidelines that discourage staff rotation
+  - idea: Hire additional nursing staff to monitor and support KMC
+    rationale: Increasing staff on the unit ensures someone is available to monitor newborns during KMC
+      and assist families with initiating it.
+    measure: Number of additional staff hired to support KMC
+  - idea: Use floater nurses during peak hours (collaborate with postnatal and other units to share staff)
+    rationale: Collaborating with other units lets needs shift staff between areas based on admission
+      levels, ensuring an adequate number of clinicians are available.
+    measure: Number of floater nurses available on a shift
+  - idea: Train multiple departments, including maternal staff, in newborn care
+    rationale: Providing training to multiple units ensures newborn care continuity and that staff rotated
+      between newborn and maternal wards are properly trained.
+    measure: Number of staff trained; number of departments included in newborn training
+  - idea: Cluster care for the newborn so there are fewer interruptions to KMC
+    rationale: Clustering care minimizes KMC interruptions, allowing the newborn to receive KMC for longer
+      periods.
+    measure: Duration of uninterrupted KMC per session
+  - idea: Allocate a nurse on daily duty to the KMC unit
+    rationale: Assigning a daily duty nurse to the KMC unit ensures continuous monitoring and provides
+      families with ongoing support, guidance, and encouragement in practicing KMC effectively.
+    measure: Nurse allocated to the KMC unit daily (Yes/No)
+- id: knowledge
+  title: Staff lack knowledge and comfort
+  gap_type: Care quality
+  ideas:
+  - idea: Train multiple departments, including maternal staff, in newborn care
+    rationale: Providing training to multiple units ensures newborn care continuity and that staff rotated
+      between newborn and maternal wards are properly trained.
+    measure: Number of staff trained; number of departments included in newborn training
+    resources:
+    - Quality of care tool
+    - KMC videos
+    - KMC resources
+  - idea: Use continuous monitoring devices to track newborn vitals during KMC
+    rationale: Continuous monitoring devices let clinical staff check a newborn's status during KMC without
+      interrupting the process, ensuring stability.
+    measure: Continuous monitoring device utilization reports
+  - idea: Doctors provide and document KMC prescriptions
+    rationale: KMC prescriptions clarify which newborns need KMC, reducing nurses' uncertainty about a
+      newborn's stability for the intervention.
+    measure: Number of KMC prescriptions documented
+  - idea: Provide KMC simulation-based training for staff using KMC training and education material
+    rationale: Staff training ensures proper KMC skills and offers a chance to practice through simulation.
+    measure: Number of trainings; number of individuals trained
+  - idea: Train staff on which types of newborns should receive KMC
+    rationale: Training staff on KMC for high-acuity newborns improves their knowledge of eligible patients.
+    measure: Number of trainings; number of individuals trained
+  - idea: Utilize more senior nurses to mentor junior nurses
+    rationale: Utilizing existing ward knowledge and skills enhances junior nursing staff capacity without
+      additional administrative investment.
+    measure: Number of mentorship sessions involving senior and junior nurses
+  - idea: Mentor peripheral hospital staff
+    rationale: Mentoring peripheral staff increases their capacity and the likelihood KMC is initiated
+      prior to referral.
+    measure: Number of mentorship sessions that occurred
+  - idea: Cross-mentor with all staff to encourage capacity beyond just the champions
+    rationale: Involving all clinical staff in mentorship ensures consistent reminders and encouragement
+      for high-quality KMC, reducing reliance on a single champion.
+    measure: Number of mentorship sessions that occurred; number of mentors
+  - idea: Facilitate cross-learning activities between facilities
+    rationale: Cross-learning activities allow facilities to share successes and challenges and learn
+      what works from each other.
+    measure: Number of cross-learning activities that occurred
+  - idea: Assess eligibility of babies for KMC during morning rounds (physicians and/or nurses)
+    rationale: Daily KMC eligibility assessments during rounds or handoff ensure staff know which newborns
+      need KMC and can encourage the intervention.
+    measure: Number of times KMC eligibility was reviewed in morning rounds
+  - idea: Report whether the newborn is eligible for KMC during daily hand-off
+    rationale: Daily KMC eligibility assessments during rounds or handoff ensure staff know which newborns
+      need KMC and can encourage the intervention.
+    measure: Number of times KMC eligibility was reported in handoff
+  - idea: 'Use devices that are better suited for KMC (example: Pumani has longer cords than other CPAP
+      devices)'
+    rationale: Choosing KMC-compatible devices and supplies reduces the need to interrupt KMC for clinical
+      interventions.
+    measure: Rates of KMC occurring alongside other interventions
+  - idea: Provide training on newborn feeding (breastfeeding, cup, nasogastric) and lactation support,
+      plus post-feeding warning signs
+    rationale: Training staff on newborn feeding, warning signs, and lactation support improves their
+      ability to counsel parents and ensure adequate, safe nutrition.
+    measure: Number of trainings; number of individuals trained
+- id: motivation
+  title: Staff not motivated
+  gap_type: Care quality
+  ideas:
+  - idea: Develop and utilize KMC Champions to provide mentorship to clinicians (including nursing staff)
+    rationale: Champions can act as early adopters and motivators, encouraging staff to adopt KMC and
+      offering implementation guidance.
+    measure: Number of KMC champions identified and trained
+  - idea: Recognize a KMC champion every month
+    rationale: Recognizing KMC champions boosts their confidence and motivation, and may inspire other
+      staff to improve their practice for recognition.
+    measure: KMC champion recognized every month (Yes/No)
+  - idea: Cross-mentor with all staff to encourage capacity beyond just the champions
+    rationale: Involving all clinical staff in mentorship ensures consistent reminders and encouragement,
+      reducing reliance on a single champion.
+    measure: Number of mentorship sessions; number of mentors
+- id: no-monitoring
+  title: No routine monitoring of KMC
+  gap_type: Care quality
+  ideas:
+  - idea: Perform routine chart reviews of KMC documentation to track progress
+    rationale: Routine chart reviews help facilities monitor progress and track improvements in documentation
+      or KMC coverage.
+    measure: Number of chart reviews that occurred
+  - idea: Perform KMC audits with feedback
+    rationale: Routinely evaluating KMC allows facilities to monitor care quality and direct resources
+      for improvement if needed.
+    measure: Number of times data audits occurred
+  - idea: Use continuous monitoring devices to track newborn vitals during KMC
+    rationale: Continuous monitoring devices let clinical staff check a newborn's status during KMC without
+      interrupting the process, ensuring stability.
+    measure: Continuous monitoring device utilization reports
+  - idea: Routinely document the weight of newborns receiving KMC to track growth
+    rationale: Tracking newborn weight lets staff monitor growth, detect early signs of malnutrition or
+      failure to thrive, and ensure sufficient weight gain.
+    measure: Percentage of newborn records with daily weight documented
+- id: mothers-unavailable
+  title: Mothers are not available
+  gap_type: Care quality
+  ideas:
+  - idea: Utilize wheelchairs to transport non-ambulatory mothers to the newborn unit
+    rationale: If mothers cannot travel to the newborn ward, using a wheelchair can enable earlier KMC
+      initiation.
+    measure: Number of times sick mothers were transported to the newborn unit via wheelchair
+  - idea: Ensure mothers and mother-appointed KMC providers have 24-hour access to the unit, except in
+      cases of illness
+    rationale: Surrogates such as aunts or grandmothers can provide KMC if mothers are ill; removing visitor
+      restrictions improves their access.
+    measure: Do mothers and mother-appointed surrogates have 24-hour access to the unit (Yes/No); number
+      of surrogate mothers who provided KMC
+  - idea: Establish a regular, set time for KMC to encourage mothers to show up (access at other times
+      is not restricted)
+    rationale: Setting a regular time for the mother to return to the newborn unit after discharge ensures
+      accountability and increases the occurrence of KMC.
+    measure: Information sheet outlining recommended KMC times available (Yes/No)
+  - idea: Have mothers or another relative stay at the hospital until the baby is discharged
+    rationale: Having a caregiver remain at the facility ensures continuous availability for KMC throughout
+      the newborn's hospitalization.
+    measure: Documentation of whether the newborn has a family member staying at the facility (Yes/No)
+- id: family-not-involved
+  title: Family members are not involved in KMC
+  gap_type: Care quality
+  ideas:
+  - idea: Remove visitor restrictions for the newborn ward
+    rationale: Surrogates such as aunts or grandmothers can provide KMC if mothers are ill; removing visitor
+      restrictions improves their access.
+    measure: Updated visitor guidelines (Yes/No); number of surrogate mothers who provided KMC
+  - idea: Provide support and encouragement for other KMC providers
+    rationale: Supporting KMC providers boosts confidence and shares responsibility, enabling earlier
+      initiation, especially when the mother cannot provide it.
+    measure: Number of surrogate mothers (other KMC providers) supported by staff
+  - idea: Establish a regular, set time for KMC to encourage mothers to show up (access at other times
+      is not restricted)
+    rationale: Setting a regular time for the mother to return to the newborn unit after discharge ensures
+      accountability and increases the occurrence of KMC.
+    measure: Information sheet outlining recommended KMC times available (Yes/No)
+  - idea: Have mothers or another relative stay at the hospital until the baby is discharged
+    rationale: Having a caregiver remain at the facility ensures continuous availability for KMC throughout
+      the newborn's hospitalization.
+    measure: Documentation of whether the newborn has a family member staying at the facility (Yes/No)
+  - idea: Cluster care for the newborn so there are fewer interruptions to KMC
+    rationale: Clustering care minimizes KMC interruptions, allowing the newborn to receive KMC for longer
+      periods.
+    measure: Duration of uninterrupted KMC per session
+- id: family-not-understand
+  title: Family members do not understand the importance of KMC
+  gap_type: Care quality
+  ideas:
+  - idea: Provide parental counseling and education (possibly through KMC champions), starting during
+      antenatal care visits
+    rationale: Educating parents can increase their knowledge of KMC and its importance, encouraging them
+      to practice it.
+    measure: Number of counseling/education sessions; number of mothers who attended a KMC counseling
+      session during antenatal visits and in the newborn ward
+    resources:
+    - KMC videos
+    - KMC resources
+  - idea: Hang KMC educational material around the newborn ward and antenatal ward
+    rationale: Posting educational materials offers parents informal learning about KMC, encouraging them
+      to practice it.
+    measure: Presence of KMC educational material hanging in the ward (Yes/No)
+  - idea: Utilize videos to provide KMC education for parents
+    rationale: Videos offer an engaging way to educate parents on KMC's importance and practice, saving
+      clinical staff time.
+    measure: Number of KMC educational video views
+  - idea: Share educational material via smartphones and WhatsApp, including nationally pre-recorded audio
+      on KMC
+    rationale: Providing parents with electronic educational material allows them to independently learn
+      about KMC and continue it after discharge.
+    measure: Number of times educational material is shared with families electronically
+  - idea: Use parental KMC champions to provide KMC counseling to mothers/surrogates in the newborn ward
+    rationale: Parental KMC champions provide support and motivation in a relatable way, increasing acceptance
+      and adoption of KMC.
+    measure: Number of KMC counseling sessions conducted by KMC champions
+  - idea: Encourage peer education and demonstrations of KMC
+    rationale: Peer education and support foster a positive environment, boosting individuals' confidence
+      in performing KMC.
+    measure: Number of times peer education demonstrations occurred
+- id: family-not-confident
+  title: Family members are not confident in their ability to provide KMC
+  gap_type: Care quality
+  ideas:
+  - idea: Provide parental counseling and education (possibly through KMC champions), starting during
+      antenatal care visits
+    rationale: Educating parents can increase their knowledge of KMC and its importance, encouraging them
+      to practice it.
+    measure: Number of counseling/education sessions; number of mothers who attended a KMC counseling
+      session during antenatal visits and in the newborn ward
+    resources:
+    - KMC videos
+    - KMC resources
+  - idea: Hang KMC educational material around the newborn ward and antenatal ward
+    rationale: Posting educational materials offers parents informal learning about KMC, encouraging them
+      to practice it.
+    measure: Presence of KMC educational material hanging in the ward (Yes/No)
+  - idea: Utilize videos to provide KMC education for parents
+    rationale: Videos offer an engaging way to educate parents on KMC's importance and practice, saving
+      clinical staff time.
+    measure: Number of KMC educational video views
+  - idea: Share educational material via smartphones and WhatsApp, including nationally pre-recorded audio
+      on KMC
+    rationale: Providing parents with electronic educational material allows them to independently learn
+      about KMC and continue it after discharge.
+    measure: Number of times educational material is shared with families electronically
+  - idea: Have staff provide verbal encouragement to family members while they practice KMC at least once
+      a day, correcting newborn positioning if necessary
+    rationale: Verbal encouragement from staff boosts the mother's confidence, encouraging continued KMC.
+    measure: Number of documented staff-mother/surrogate encounters for KMC support
+  - idea: Use parental KMC champions to provide KMC counseling to mothers/surrogates in the newborn ward
+    rationale: Parental KMC champions provide support and motivation in a relatable way, increasing acceptance
+      and adoption of KMC.
+    measure: Number of KMC counseling sessions conducted by KMC champions
+  - idea: Encourage peer education and demonstrations of KMC
+    rationale: Peer education and support foster a positive environment, boosting individuals' confidence
+      in performing KMC.
+    measure: Number of times peer education demonstrations occurred
+  - idea: Provide parental counseling and education about newborn feeding (breast, cup, nasogastric tube)
+      and warning signs to watch for after feeding
+    rationale: Educating parents on newborn feeding and warning signs increases their knowledge and makes
+      them active participants in their child's care.
+    measure: Number of counseling/education sessions that occurred
+- id: cultural-norms
+  title: KMC practice does not align with cultural norms
+  gap_type: Care quality
+  ideas:
+  - idea: Place screens or curtains around/near the newborn's bed/warmer to provide privacy for the individual
+      practicing KMC
+    rationale: Providing privacy and comfort encourages mothers and surrogates to practice KMC more frequently
+      or for longer.
+    measure: Number of newborn beds covered with curtains or screens
+- id: guidelines
+  title: Guidelines are not correct or available
+  gap_type: Care quality
+  ideas:
+  - idea: Review the KMC guidelines to ensure they align with national guidelines or another standard
+    rationale: Keeping guidelines up to date provides staff with accurate, current instructions for performing
+      KMC.
+    measure: Did a review of the clinical guidelines occur (Yes/No); is the guideline aligned with national
+      guidelines or another standard (Yes/No)
+    resources:
+    - KMC resources
+  - idea: Post guidelines and standards of practice throughout the unit, leaving copies in multiple locations
+    rationale: Making guidelines readily available ensures staff have the resources to track their own
+      care quality and answer questions about performing KMC.
+    measure: Guidelines posted and available throughout the unit (Yes/No)
+- id: documentation
+  title: KMC not documented
+  gap_type: Data quality
+  ideas:
+  - idea: Review the KMC documentation form with stakeholders
+    rationale: Reviewing and updating KMC documentation to include critical information helps facilities
+      track progress and ensures all critical information is present.
+    measure: Documentation review with stakeholders occurred (Yes/No)
+  - idea: Include KMC duration and frequency in routine charting
+    rationale: Reviewing and updating KMC documentation to include key details like duration and frequency
+      helps facilities track progress.
+    measure: KMC documentation includes duration and frequency (Yes/No)
+  - idea: Perform routine chart reviews of KMC documentation to track progress
+    rationale: Routine chart reviews help facilities monitor progress and track improvements in documentation
+      or KMC coverage.
+    measure: Number of chart reviews that occurred
+  - idea: Provide KMC training for staff on how to complete KMC documentation forms
+    rationale: Training staff on KMC documentation increases their skills and confidence, encouraging
+      regular use.
+    measure: Number of training sessions; number of individuals trained
+  - idea: Provide practice examples during KMC mentorship and training sessions, highlighting the importance
+      of KMC documentation
+    rationale: Practice examples allow staff to test their skills in different scenarios, boosting confidence
+      in routine documentation.
+    measure: KMC documentation practice examples included in training material (Yes/No)
+  - idea: Continuously orient mothers on the importance of documenting KMC in their personal KMC book,
+      with the booklet reviewed by a supervising nurse
+    rationale: A personal KMC book reduces the documentation burden on nurses, while supervisor review
+      ensures accountability and consistent use by mothers.
+    measure: Percentage of mothers documenting their KMC in their book; number of times a nursing supervisor
+      reviews the maternal KMC books
+- id: qi-activities
+  title: Inadequate or infrequent QI activities
+  gap_type: Data quality
+  ideas:
+  - idea: Provide QI training for staff using QI training and educational material
+    rationale: Providing QI training boosts staff skills and confidence, fostering a culture of continuous
+      improvement.
+    measure: Number of training sessions; number of individuals trained
+    resources:
+    - QI Meeting Minutes Template
+  - idea: Include examples of how to use KMC data for QI activities within the KMC and QI training for
+      staff
+    rationale: Practice examples of KMC data for QI projects let staff test skills in various scenarios,
+      boosting confidence for future projects.
+    measure: Presence of KMC/QI practice examples in training material (Yes/No)
+  - idea: Conduct QI coaching at facilities with a regional and/or country QI expert
+    rationale: Recurring QI coaching enhances facility and regional skills and boosts confidence in performing
+      QI consistently.
+    measure: Number of coaching sessions that occurred
+  - idea: Identify facility-level QI champions and provide them with training
+    rationale: Champions can serve as early adopters and motivators, encouraging staff to adopt QI practices
+      and integrate QI into routine activities.
+    measure: Number of champions identified and trained
+  - idea: Conduct monthly QI meetings with the ward improvement team, and document best practices whenever
+      wards achieve their targets
+    rationale: Monthly QI meetings help facilities monitor progress, assess the impact of QI projects
+      on KMC coverage, and preserve successful change ideas.
+    measure: Number of QI meetings that occurred
+  - idea: Perform monthly data audits during ward improvement meetings and develop action plans
+    rationale: Data audits allow facilities to monitor progress and track changes in KMC coverage.
+    measure: Number of data audits that occurred
+  - idea: Audit documentation quality
+    rationale: Monitoring documentation quality ensures individuals are following the change ideas and
+      improving their reporting.
+    measure: Number of documentation audits
+  - idea: Include KMC as part of quality indicators review and tracking
+    rationale: Including KMC data in quality reviews reminds facilities to track and evaluate progress
+      toward their KMC goals.
+    measure: Quality indicator documentation includes KMC information (Yes/No)
+  - idea: Perform routine chart reviews of KMC documentation to track progress
+    rationale: Routine chart reviews help facilities monitor progress and track improvements in documentation
+      or KMC coverage.
+    measure: Number of chart reviews that occurred
+  - idea: Perform KMC audits with feedback
+    rationale: Routinely evaluating KMC allows facilities to monitor care quality and direct resources
+      for improvement if needed.
+    measure: Number of times data audits occurred

@@ -1,0 +1,23 @@
+- id: wit-minutes
+  title: Ward Improvement Team (WIT) Meeting Minutes Template
+  description: A structured meeting template for QI meetings. Includes sections for project aim, participant
+    list, PDSA cycle review (was the change idea tested as planned, process measure value, impact on outcome
+    measure, decision to abandon/adopt/adapt), and next steps with responsible persons and deadlines.
+  sections:
+  - Project aim
+  - Meeting participants
+  - 'PDSA cycle review: Change idea 1 & 2 (tested as planned? / process measure value / impact vs baseline
+    / decision: abandon, adopt, adapt)'
+  - 'Next steps: action items, responsible person, deadline, status'
+  - Next WIT meeting date and time
+- id: cpap-osce
+  title: Bubble CPAP OSCE Template
+  description: 'A 10-minute objective structured clinical examination (OSCE) template for assessing a
+    neonatal nurse or clinician''s competency in applying and managing Bubble CPAP. Patient scenario:
+    preterm neonate, 32 weeks, 1.8 kg, respiratory distress.'
+  sections:
+  - 'Equipment setup: assemble CPAP circuit, humidifier, bubble chamber; set 5 cmH₂O pressure'
+  - 'Application: select correct nasal prong size, position neonate, secure headgear'
+  - 'Monitoring and troubleshoot: check bubbling, monitor SpO₂, adjust FiO₂, address complications'
+  - 'Parental communication: explain therapy purpose, reassure, highlight signs of improvement'
+  - 'Assessment checklist: 8 steps scored 0–2, maximum 16 points'

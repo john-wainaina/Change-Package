@@ -1,0 +1,103 @@
+id: phototherapy
+name: Phototherapy
+short: Phototherapy
+gaps:
+- id: power
+  title: Not enough power
+  gap_type: Care quality
+  ideas:
+  - idea: 'Identify and implement back-up power (example: solar, generator)'
+    rationale: Adding a secondary power source ensures phototherapy machines work during power outages.
+    measure: Backup power source identified (Yes/No)
+  - idea: Have additional power ports installed
+    rationale: Additional power ports enable staff to use more phototherapy machines.
+    measure: Additional power ports installed (Yes/No)
+  - idea: Create space in the admission room and NBU to store and keep phototherapy machines
+    rationale: Designating a storage location ensures machines can be used without frequently moving/transporting
+      them.
+    measure: Space created (Yes/No)
+- id: equipment
+  title: Not enough working equipment
+  gap_type: Care quality
+  ideas:
+  - idea: Track the occurrence of phototherapy planned preventative maintenance (PPM)
+    rationale: Routine PPM prevents breakdowns, ensuring devices are available when needed.
+    measure: Number of times PPM occurs
+    resources:
+    - BMET Technical Job Aids
+  - idea: Distribute additional phototherapy machines while not compromising phototherapy monitoring
+    rationale: Increasing the number of machines allows a facility to treat more newborns.
+    measure: Number of additional phototherapy machines distributed
+- id: knowledge
+  title: Staff lack knowledge and comfort with using phototherapy
+  gap_type: Care quality
+  ideas:
+  - idea: Conduct routine mentorship on phototherapy, light meter use, bilirubinometers, and transcutaneous
+      bilirubinometers
+    rationale: Performing routine mentorship ensures all staff are aware of current care guidelines and
+      practice the same level of care.
+    measure: Number of new clinicians mentored; number of mentorship sessions
+    resources:
+    - Phototherapy and bilirubinometer clinical job aids
+    - Jaundice management clinical module
+    - Phototherapy and light meter clinical scenario
+    - Phototherapy and bilirubinometer technical job aids
+    - Jaundice management BMET education module
+    - Phototherapy light technical scenario
+    - Quality of care audit tool
+  - idea: Include education and mentorship on newborn jaundice management in the induction package for
+      new staff
+    rationale: Mentoring and educating new staff during induction increases their capacity and ensures
+      they have the training necessary to provide care.
+    measure: Number of new clinicians mentored; number of mentorship sessions
+  - idea: Use phototherapy champions
+    rationale: Champions can serve as early adopters and motivators, encouraging staff to perform high-quality
+      phototherapy.
+    measure: Number of champions identified and trained
+  - idea: Share standard operating procedures (SOPs)/job aids on blood samples needed for jaundice lab
+      tests, with a copy available on the unit
+    rationale: Job aids increase staff knowledge and serve as a guide if they are unsure how to provide
+      care.
+    measure: Job aids developed (Yes/No); job aids available on the unit (Yes/No)
+  - idea: Use the NEST360 quality of care audit tool
+    rationale: Lets facilities see if they are following best practices or if care needs improvement.
+    measure: Number of times the audit tool was used for phototherapy; quality of care audit tool score
+- id: motivation
+  title: Staff lack motivation
+  gap_type: Care quality
+  ideas:
+  - idea: Use phototherapy champions
+    rationale: Champions can serve as early adopters and motivators, encouraging staff to perform high-quality
+      phototherapy.
+    measure: Number of champions identified and trained
+- id: no-monitoring
+  title: No routine phototherapy monitoring
+  gap_type: Care quality
+  ideas:
+  - idea: Audit phototherapy documentation, including bilirubin documentation
+    rationale: Performing documentation audits allows facilities to monitor documentation quality and
+      identify if refresher mentorship is needed.
+    measure: Number of times documentation audits occurred
+    resources:
+    - Quality of care audit tool
+  - idea: Use the NEST360 quality of care audit tool
+    rationale: Lets facilities see if they are following best practices or if care needs improvement.
+    measure: Number of times the audit tool was used for phototherapy; quality of care audit tool score
+  - idea: Incorporate documentation monitoring into routine nursing manager duties
+    rationale: Integrating documentation review into routine duties enables nurse managers to uphold care
+      standards and foster accountability.
+    measure: Documentation monitoring part of nursing manager duties (Yes/No); number of documentation
+      reviews
+- id: documentation
+  title: Phototherapy not documented
+  gap_type: Data quality
+  ideas:
+  - idea: Audit phototherapy documentation, including bilirubin documentation
+    rationale: Performing documentation audits allows facilities to monitor documentation quality and
+      identify if refresher mentorship is needed.
+    measure: Number of times documentation audits occurred
+  - idea: Incorporate documentation monitoring into routine nursing manager duties
+    rationale: Integrating documentation review into routine duties enables nurse managers to uphold care
+      standards and foster accountability.
+    measure: Documentation monitoring part of nursing manager duties (Yes/No); number of documentation
+      reviews

@@ -1,0 +1,19 @@
+version: '1.0'
+release_date: August 2025
+intro_steps:
+- label: Step 1
+  text: 'Identify the coverage gap you are trying to address (example: low CPAP coverage).'
+- label: Step 2
+  text: 'Look at the common causes of low coverage listed and add any others you find at your site (example: using a fishbone
+    diagram).'
+- label: Step 3
+  text: Choose which gaps (causes) you think are causing your low coverage and decide which to start on first (most important
+    and most able to be addressed).
+- label: Step 4
+  text: Choose change idea(s) that can be implemented and are likely to create change, and the process measure(s) you will
+    use. Look at the tables for detail on how other sites solved this problem.
+- label: Step 5
+  text: Get buy-in and resources needed and get started. There are links to potential sources like wall charts, training etc.
+- label: Step 6
+  text: Track your implementation and process measures for cycle 1 in 4 weeks to see if change is needed (PDSA cycle 2), and
+    continue.
